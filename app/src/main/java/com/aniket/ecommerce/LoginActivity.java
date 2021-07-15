@@ -132,7 +132,8 @@ public class LoginActivity extends AppCompatActivity
             {
                 if (dataSnapshot.child(parentDbName).child(phone).exists())
                 {
-                    Users usersData = dataSnapshot.child(parentDbName).child(phone).getValue(Users.class);
+                    Users usersData = dataSnapshot.child(parentDbName).child(phone).
+                            getValue(Users.class);
 
                     if (usersData.getPhone().equals(phone))
                     {
